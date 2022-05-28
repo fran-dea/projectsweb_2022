@@ -14,37 +14,66 @@
   background-color:#9691FF;
   color:white;
   cursor: url(http://media.tumblr.com/tumblr_lqs4idHqTZ1qfoi4t.png);
-  position: center;  
+  position: center; 
+  display: flexbox; 
+  margin-top: 120px;
     }
 .menu{
-   background:url("https://i.pinimg.com/564x/c3/1f/d3/c31fd3a72f573dcdeb8ad724a6fb6a01.jpg");
-  background-size:full;
-  background-repeat: no-repeat;
-  background-color: white;
-  width:10000;
-  height:350px;
-  border: 15px white solid;
-  margin: 0;
-  padding: 0 10px 30px 600px;
+   
+  display: flex;
+  position: fixed;
+  top: 0;
+  flex-flow: row;
+  align-items: flex-end;
+
+  background-color: rgb(75, 30, 113);
+  width:100%;
+  height:90px;
+  
+  padding-top: 30px;
+  
+  
 }
+
 a {
   color: #f86083;
   text-decoration: none;
 
 }
+
+.menu a {
+  float: left;
+  display: block;
+  color: white;
+  text-align:left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+a:hover {
+  background-color:rgb(205, 151, 234);
+  transition: 0.5s;
+  color: black;
+}
 h1{
   font-size: 3em;
   color:black;
   padding: 0 0 0 30px;
+  
+}
+.menu h1{
+  text-align: left;
+  color: white;
 }
 p{
  margin: 0 auto 0 auto;
  width: 50em;
-  font-size: 1em;
+ font-size: 2em;
+ text-align: justify;
 }
 h2 {
   background-color: white;
   color:black ;
+  width:fit-content;
   padding: 10px;
   font-size: 3em;
   margin: 1em 6em 1em em ;
@@ -53,13 +82,15 @@ h2 {
 }
 
 ul img {
-  width:20em; 
+  width:30em; 
   height:auto;
-  margin: 1em 5em 1em 1em;  
+  margin: 1em 5em 1em 1em;
+  
 }
 
 ul {
   list-style: none ;
+  
 }
 ul li {
   color: white;
@@ -68,21 +99,23 @@ ul li {
 img {
   width:auto;
   height:auto;
-  margin: 1em 10em 1em 10em;    
-}
+  margin: 1em 10em 1em 10em;
+  
+}    
+
+.fotopessoal{
+  display:flex;
+  align-items:center;
+  flex-direction: column; 
+} 
 
 .atalho { 
   padding:0.5em;
-  margin:1em;  
+  margin:1em;
+
 }
 
-nav { 
-    width:full;
-   background-color: white;
-    margin:10px auto;
-    padding:10px;
-  display:in-line;
-}
+
 nav ul {
     list-style-image:none;
     list-style-position:outside;
@@ -96,11 +129,16 @@ nav ul li {
   font-size:1.5em;
   line-height:normal;
   margin-left:-2px;
+
   padding:0;
 }
+
 .anime, .manga, .jogos {
   font-size: 2.5em;
   font-weight: bold; 
+  display:flex;
+  align-items: center;
+  flex-direction: column;
 }  
   
   </style>
@@ -108,27 +146,30 @@ nav ul li {
  </head>
   
   <body>
+    <nav class="menu">
     <div class="menu"> 
-    <h1>《Minha página》 </h1>
-    <nav>
+    <h1 id="primeirotitulo">《Minha página》 </h1>
+    
      <ul>
-       <li><a class="atalho" href="#Sobre mim">Sobre mim</a></li>
+       <li><a hover class="atalho" href="#Sobre mim">Sobre mim</a></li>
       
-       <li><a class="atalho" href="#O que aprendi no Webdev">O que aprendi no Webdev</a></li>
+       <li><a hover class="atalho" href="#O que aprendi no Webdev">O que aprendi no Webdev</a></li>
+       
+      </ul>
       
-      
-        </nav>
       </div>
+    </nav>
     <h2 id="Sobre mim">《Sobre mim》 </h2>
     
      <p> Olá, me chamo Francielly, sou caloura de Matemática Aplicada e tenho 18 anos. Nessa página falarei sobre algumas das coisas que gosto e sobre o WebDev.</p>
     
        
-   
+      <div class="fotopessoal">   
       <img src="https://media-exp1.licdn.com/dms/image/C5603AQFWNuZ1WCXO_A/profile-displayphoto-shrink_400_400/0/1648764351531?e=1657152000&v=beta&t=02fqu2wkH-VuV-UdjlJf_7BFlmvL3K5Ug0s3Oq9WXUI"/>
-      <div></div>
+      </div>
      <p>Assisto muitos animes, os meus preferidos são:</p>
-      <ul class="anime">
+     
+     <ul class="anime">
         <li>《Jojo's Bizarre Adventure》 </li>
         <img src="https://i.pinimg.com/originals/96/33/24/9633246b71c2eaa106248a9cccb36039.gif" 
           
@@ -142,6 +183,7 @@ nav ul li {
         <li>《Evangelion》</li>
         <img src="https://i.pinimg.com/originals/61/1b/38/611b380042fa40d4181a7ce8d04458ec.gif"/>
         </ul>
+      </div>
       <p> Também leio alguns mangás, como: </p>
        <ul class="manga">
         <li>《My dress up darling》</li>
@@ -176,6 +218,8 @@ nav ul li {
         <li>Como usar os atributos</li>
         <li>Como usar os valores</li>
         <li>O que é box model, padding, border e margin</li>
+        <li>O que é flexbox e suas propriedades</li>
+        <li>Como usar float e position</li>
         </ul>
       
       </body>
