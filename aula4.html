@@ -7,143 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <meta charset=utf-8″/>
   
-  <style type="text/css">
- 
-  body {
-  font-family:"Bebes Neue", cursive;
-  background-color:#9691FF;
-  color:white;
-  cursor: url(http://media.tumblr.com/tumblr_lqs4idHqTZ1qfoi4t.png);
-  position: center; 
-  display: flex; 
-  margin-top: 120px;
-  flex-direction: column;
-    }
-.menu{
-   
-  display: flex;
-  position: fixed;
-  top: 0;
-  flex-flow: row;
-  align-items: flex-end;
-  margin-left: -15px;
-
-  background-color: rgb(75, 30, 113);
-  width:100%;
-  height:90px;
-  
-  padding-top: 30px;
-  
-  
-}
-
-a {
-  color: #f86083;
-  text-decoration: none;
-
-}
-
-.menu a {
-  float: left;
-  display: block;
-  color: white;
-  text-align:left;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-a:hover {
-  background-color:rgb(205, 151, 234);
-  transition: 0.5s;
-  color: black;
-}
-h1{
-  font-size: 3em;
-  color:black;
-  padding: 0 0 0 30px;
-  
-}
-.menu h1{
-  text-align: left;
-  color: white;
-}
-p{
- margin: 0 auto 0 auto;
- width: 50em;
- font-size: 1em;
- text-align: justify;
-}
-h2 {
-  background-color: white;
-  color:black ;
-  width:fit-content;
-  padding: 10px;
-  font-size: 2em;
-  margin: 1em 6em 1em em ;
-  border-radius:100px;
-  border: 1em 2em 1em 2em;
-}
-
-ul img {
-  width:20em; 
-  height:auto;
-  margin: 1em 5em 1em 1em;
-  
-}
-
-ul {
-  list-style: none ;
-  
-}
-ul li {
-  color: white;
-}
-
-img {
-  width:auto;
-  height:auto;
-  margin: 1em 10em 1em 10em;
-  
-}    
-
-.fotopessoal{
-  display:flex;
-  align-items:center;
-  flex-direction: column; 
-} 
-
-.atalho { 
-  padding:0.5em;
-  margin:1em;
-
-}
-
-
-nav ul {
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    overflow:hidden;
-    margin:0;
-    padding:0;
-}
-nav ul li {
-  float:left;
-  font-size:1.5em;
-  line-height:normal;
-  margin-left:-2px;
-
-  padding:0;
-}
-
-.anime, .manga, .jogos {
-  font-size: 1.5em;
-  font-weight: bold; 
-  display:flex;
-  align-items: center;
-  flex-direction: column;
-}  
-  
-  </style>
+  <link rel="stylesheet" type="text/css" href="estilo4.css" />
   
  </head>
   
@@ -153,7 +17,7 @@ nav ul li {
     <h1 id="primeirotitulo">《Minha página》 </h1>
     
      <ul>
-       <li><a hover class="atalho" href="#Sobre mim">Sobre mim</a></li>
+       <li><a hover class="atalho" href="#Sobremim">Sobre mim</a></li>
       
        <li><a hover class="atalho" href="#O que aprendi no Webdev">O que aprendi no Webdev</a></li>
        
@@ -161,14 +25,29 @@ nav ul li {
       
       </div>
     </nav>
-    <h2 id="Sobre mim">《Sobre mim》 </h2>
+    
+      
+    <h2 id="Sobremim">《Sobre mim》 </h2>
     
      <p> Olá, me chamo Francielly, sou caloura de Matemática Aplicada e tenho 18 anos. Nessa página falarei sobre algumas das coisas que gosto e sobre o WebDev.</p>
-    
-       
-      <div class="fotopessoal">   
-      <img src="https://media-exp1.licdn.com/dms/image/C5603AQFWNuZ1WCXO_A/profile-displayphoto-shrink_400_400/0/1648764351531?e=1657152000&v=beta&t=02fqu2wkH-VuV-UdjlJf_7BFlmvL3K5Ug0s3Oq9WXUI"/>
-      </div>
+     <aside>
+          
+      <ul class="socials">
+        Socials
+          <li>Instagram:  <a target= "_blank" href="https://www.instagram.com/_fran.boesa/">@_fran.boesa</a></li>
+          <li>Anilist:  <a target= "_blank" href="https://anilist.co/user/franboesa/">franboesa</a> </li>
+          <li>Github:  <a target= "_blank" href="https://github.com/fran-dea">fran-dea</a></li>
+          <li>Linkedin:  <a target= "_blank" href="https://www.linkedin.com/in/francielly-meira-a06655236/">Francielly Meira</a></li>
+        
+          
+          
+      
+
+      </ul>
+    </aside>
+ 
+   
+      
      <p>Assisto muitos animes, os meus preferidos são:</p>
      
      <ul class="anime">
@@ -194,10 +73,7 @@ nav ul li {
           <img src="https://i.pinimg.com/originals/c3/3f/9e/c33f9eb207d87ec44a72207120985b8d.gif"/>
         <li>《Wotakoi》</li>
   <img src="https://i.pinimg.com/originals/ac/c0/33/acc033ccef64bcb88c29f82dca7a130d.gif"/>
-        </ul>
-      
-     <p><a target= "_blank"href = "https://anilist.co/user/franboesa/">Aqui</a> um link para meu Anilist</p>
-      
+        </ul>     
      
      <p>Também gosto de jogar:</p>
       <ul class="jogos">
@@ -209,7 +85,7 @@ nav ul li {
      <h2 id="O que aprendi no Webdev"> 《O que aprendi no Webdev》</h2>
             <div></div>
 
-      <ul>
+      <ul class="webdev">
         <li>O que é HTML e tags</li>
         <li>A estrutura do HTML</li>
         <li>Tags como h1, a, ul, ol, li, div e img</li>

@@ -1,0 +1,183 @@
+body {
+    font-family:"Bebes Neue", cursive;
+    background-color:#9691FF;
+    color:white;
+    cursor: url(http://media.tumblr.com/tumblr_lqs4idHqTZ1qfoi4t.png);
+    align-items: center;
+    display: flex; 
+    margin-top: 120px;
+    flex-direction: column;
+    margin-left:30px;
+    
+    
+      }
+  .menu{
+     
+    display: flex;
+    position: fixed;
+    top: 0;
+    flex-flow: row;
+    align-items: flex-end;
+  
+    background-color: rgb(75, 30, 113);
+    width:100%;
+    height:90px;
+    margin-left: -15px;
+    padding-top: 30px;
+    
+    
+  }
+  
+  a {
+    color: #f86083;
+    text-decoration: none;
+  
+  }
+  
+  .menu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align:left;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color:rgb(205, 151, 234);
+    transition: 0.5s;
+    color: black;
+  }
+  h1{
+    font-size: 3em;
+    color:black;
+    padding: 0 0 0 30px;
+    
+    
+  }
+  .menu h1{
+    text-align: left;
+    color: white;
+  }
+  
+ 
+  p{
+   margin: 0 auto 0 auto;
+   width: 50em;
+   font-size: 1em;
+   text-align: justify;
+   
+  }
+  h2 {
+    background-color: white;
+    color:black ;
+    width:fit-content;
+    padding: 10px;
+    font-size: 2em;
+    margin: 10px auto 10px auto;  
+    border-radius:10px;
+    border: 1em 2em 1em 2em;
+    text-align: justify;
+    
+  }
+  
+  ul img {
+    width:20em; 
+    height:auto;
+    margin: 1em 5em 1em 1em;
+    
+  }
+  
+  ul {
+    list-style-type: none;
+   
+    
+    
+  }
+  ul li {
+    color: white;
+    font-size: 1em;
+   
+  }
+  
+  img {
+    width:auto;
+    height:auto;
+    margin: 1em 10em 1em 10em;
+    
+  }    
+  
+  
+  
+ 
+  .socials {
+    background-color:thistle;
+    width: fit-content;
+    padding: 0 30px 30px 30px;
+    
+    
+  }
+  
+  #fotopessoal{
+      width: 250px;
+      margin-top: 20px;
+      align-items: center;
+  }
+  
+  
+  .atalho { 
+    padding:0.5em;
+    margin:1em;
+  
+  }
+  
+  
+  nav ul {
+      list-style-image:none;
+      list-style-position:outside;
+      list-style-type:none;
+      overflow:hidden;
+      margin:0;
+      padding:0;
+  }
+  nav ul li {
+    float:left;
+    font-size:1.5em;
+    line-height:normal;
+    margin-left:-2px;
+  
+    padding:0;
+  }
+  
+  .anime, .manga, .jogos, .webdev, .socials {
+    font-size: 1.5em;
+    font-weight: bold; 
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    width: fit-content;
+    text-align: justify;
+    align-items: center;
+    
+  }
+  .webdev {
+    font-weight: normal;
+    font-size: 1em;
+    
+  } 
+  @media screen and (min-width: 700px) { 
+
+    }
+    .socials{
+      float:left;
+      
+         
+      
+    }
+
+    
+    
+      
+  
+  
+   
+   
