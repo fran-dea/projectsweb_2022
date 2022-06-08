@@ -3,28 +3,22 @@ body {
     background-color:#9691FF;
     color:white;
     cursor: url(http://media.tumblr.com/tumblr_lqs4idHqTZ1qfoi4t.png);
-    align-items: center;
-    display: flex; 
     margin-top: 120px;
-    flex-direction: column;
     margin-left:30px;
-    
-    
-      }
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+   }
   .menu{
      
     display: flex;
     position: fixed;
     top: 0;
-    flex-flow: row;
-    align-items: flex-end;
-  
+    flex-flow: column;  
     background-color: rgb(75, 30, 113);
     width:100%;
-    height:90px;
-    margin-left: -15px;
-    padding-top: 30px;
-    
+    height:fit-content;
+    margin-left: -15px;   
     
   }
   
@@ -35,10 +29,8 @@ body {
   }
   
   .menu a {
-    float: left;
-    display: block;
+    display: flex;
     color: white;
-    text-align:left;
     padding: 14px 16px;
     text-decoration: none;
   }
@@ -61,67 +53,91 @@ body {
   
  
   p{
-   margin: 0 auto 0 auto;
-   width: 50em;
+   margin: 0 auto 25px auto;
+   width: fit-content; 
    font-size: 1em;
    text-align: justify;
    
   }
+  
   h2 {
     background-color: white;
     color:black ;
-    width:fit-content;
+    width:98%;
     padding: 10px;
     font-size: 2em;
-    margin: 10px auto 10px auto;  
+    margin-bottom: 60px;
     border-radius:10px;
     border: 1em 2em 1em 2em;
-    text-align: justify;
-    
+  }
+  .title2 {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+  #espacinho{
+    margin-top: 15em;
+
+
   }
   
+  
   ul img {
-    width:20em; 
+    width:13em; 
     height:auto;
-    margin: 1em 5em 1em 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     
     
   }
   
   ul {
     list-style-type: none;
-   
-    
-    
+    width: fit-content;    
   }
   ul li {
     color: white;
     font-size: 1em;
+    
    
   }
   
-  img {
-    width:auto;
-    height:auto;
-    margin: 1em 10em 1em 10em;
-    
-  }    
-  
-  
-  
- 
+   
   .socials {
-    background-color:thistle;
-    width: fit-content;
-    padding: 0 30px 30px 30px;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+    margin-top: 50px;
     
+  }
+  .socials ul{
+    background-color:thistle;
+    padding: 50px;
+    border-radius: 20px;
+    
+  }
+  .content{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: justify;
+    align-items: center;
+    margin: 10px;
     
   }
   
-  #fotopessoal{
-      width: 250px;
-      margin-top: 20px;
-      align-items: center;
+  .anime, .manga, .jogos, .webdev, .socials {
+    font-size: 1.5em;
+    font-weight: bold;
+    width: fit-content;
+
+    
   }
+  
+  
   
   
   .atalho { 
@@ -144,35 +160,70 @@ body {
     font-size:1.5em;
     line-height:normal;
     margin-left:-2px;
-  
     padding:0;
   }
   
-  .anime, .manga, .jogos, .webdev, .socials {
-    font-size: 1.5em;
-    font-weight: bold; 
-    display:flex;
-    text-align: center;
-    flex-direction: column;
-    width: fit-content;
-    text-align: justify;
-    align-items: center;
+  
     
-  }
+  
   .webdev {
     font-weight: normal;
     font-size: 1em;
+    columns: 1;
+    list-style-type:disc;
     
   } 
+ 
   @media screen and (min-width: 700px) { 
 
+    body{
+      display:block;
     }
     .socials{
+      display:block;
       float:left;
-      
-         
+      width: fit-content;
+    }
+   
+    .menu{
+     
+      display: flex;
+      position: fixed;
+      top: 0;
+      flex-flow: row;
+      align-items: flex-end;
+    
+      background-color: rgb(75, 30, 113);
+      width:100%;
+      height:90px;
+      margin-left: -15px;
+      padding-top: 30px;
+    }
+    .menu a {
+      float: left;
+      display: block;
+      text-align:left;
       
     }
+    #espacinho{
+      margin-top: 0;
+    }
+    
+  ul img {
+    width:15em; 
+    height:auto;
+    
+  }
+  .content{
+    width: 60em;
+  }  
+  .content img{
+    width: 30em;
+  }  
+  .webdev {
+    columns: 2;
+  } 
+  }
 
     
     
