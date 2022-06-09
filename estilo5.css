@@ -1,0 +1,254 @@
+body {
+    font-family:"Bebes Neue", cursive;
+    background-color:#9691FF;
+    color:white;
+    cursor: url(http://media.tumblr.com/tumblr_lqs4idHqTZ1qfoi4t.png);
+    margin-top: 120px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+   }
+  .menu{
+    display: flex;
+    position: fixed;
+    top: -25px;
+    flex-flow: column;  
+    background-color: rgb(86, 34, 128);
+    width:100%;
+    margin-left: -8px;
+    height:fit-content;
+      
+  }
+  .menu ul li{
+      margin-top: -40px;
+  }
+  
+  a {
+    color: #f86083;
+    text-decoration: none;
+  
+  }
+  
+  .menu a {
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color:rgb(205, 151, 234);
+    transition: 0.5s;
+    color: black;
+  }
+  h1{
+    font-size: 3em;
+    color:black;
+    padding: 0 0 0 30px;
+    
+    
+  }
+  .menu h1{
+    text-align: left;
+    color: white;
+  }
+  
+ 
+  p{
+   margin: 0 auto 25px auto;
+   width: fit-content; 
+   font-size: 1em;
+   text-align: justify;
+   
+  }
+  
+  h2 {
+    background-color: white;
+    color:black ;
+    width:98%;
+    padding: 10px;
+    font-size: 2em;
+    margin-bottom: 60px;
+    border-radius:10px;
+    border: 1em 2em 1em 2em;
+  }
+  .title2 {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+  }
+  #espacinho{
+    margin-top: 22em;
+
+
+  }
+  
+  
+  ul img {
+    width:13em; 
+    height:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     
+    
+  }
+  
+  ul {
+    list-style-type: none;
+    width: fit-content;    
+  }
+  ul li {
+    color: white;
+    font-size: 1em;
+    
+   
+  }
+  
+   
+  .socials {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+    margin-top: 50px;
+    background-color:thistle;
+    padding-right: 40px;
+    
+    border-radius: 20px;
+    
+  }
+  
+  .content{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: justify;
+    align-items: center;
+    margin: 10px;
+    
+  }
+  
+  .anime, .manga, .jogos, .webdev, .socials {
+    font-size: 1.5em;
+    font-weight: bold;
+    width: fit-content;
+
+    
+  }
+  
+  
+  
+  
+  .atalho { 
+    padding:0.5em;
+    margin:1em;
+  
+  }
+  
+  
+  nav ul {
+      list-style-image:none;
+      list-style-position:outside;
+      list-style-type:none;
+      overflow:hidden;
+      margin:0;
+      padding:0;
+  }
+  nav ul li {
+    float:left;
+    font-size:1.5em;
+    line-height:normal;
+    margin-left:-2px;
+    padding:0;
+  }
+  
+  .webdev {
+    font-weight: normal;
+    font-size: 1em;
+    columns: 1;
+    list-style-type:disc;
+    
+  } 
+  .darkmode{
+      background-color: rgb(20, 25, 108);
+  }
+  .dark{
+  background-color: rgb(69, 2, 141);
+  color:white;
+}
+    button{
+        width: 8em;
+        height: fit-content;;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        background-color:#9691FF ;
+        color:white;
+        margin-left: 30px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        
+    }
+    button:hover{
+        transition: 0.5s;
+        background-color: rgb(20, 25, 108);
+    }
+
+  @media screen and (min-width: 700px) { 
+
+    body{
+      display:block;
+    }
+    .socials{
+      display:block;
+      float:left;
+      width: fit-content;
+    }
+   
+    .menu{
+     
+      display: flex;
+      position: fixed;
+      top: 0;
+      flex-flow: row;
+      align-items: flex-end;
+    
+      background-color: rgb(75, 30, 113);
+      width:100%;
+      height:90px;
+      padding-top: 30px;
+    }
+    .menu a {
+      float: left;
+      display: block;
+      text-align:left;
+      
+    }
+    .menu ul li{
+        margin-top: 0px;
+    }
+    
+    #espacinho{
+      margin-top: 0;
+    }
+    
+  ul img {
+    width:15em; 
+    height:auto;
+    
+  }
+  .content{
+    width: 60em;
+  }  
+  .content img{
+    width: 30em;
+  }  
+  .webdev {
+    columns: 2;
+  } 
+  }
+
+    
