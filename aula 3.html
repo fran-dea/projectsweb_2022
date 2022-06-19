@@ -6,50 +6,60 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <meta charset=utf-8″/>
-  
+
   <style type="text/css">
- 
+
   body {
   font-family:"Bebes Neue", cursive;
   background-color:#9691FF;
   color:white;
   cursor: url(http://media.tumblr.com/tumblr_lqs4idHqTZ1qfoi4t.png);
-  position: center; 
-  display: flex; 
-  margin-top: 120px;
-  flex-direction: column;
-    }
-.menu{
-   
+  position: center;
   display: flex;
-  position: fixed;
+  margin: 0;
+  flex-direction: column;
+  }
+.menu{
+
+  display: flex;
+  position: sticky;
   top: 0;
   flex-flow: row;
-  align-items: flex-end;
-  margin-left: -15px;
+  align-items: stretch;
 
   background-color: rgb(75, 30, 113);
   width:100%;
   height:90px;
-  
-  padding-top: 30px;
-  
-  
+
 }
 
 a {
   color: #f86083;
   text-decoration: none;
+}
 
+.menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  float:left;
+  font-size:1.5em;
+  line-height:normal;
+  vertical-align: middle;
+  overflow:hidden;
+  margin:0;
+  height: 100%;
 }
 
 .menu a {
   float: left;
   display: block;
   color: white;
-  text-align:left;
-  padding: 14px 16px;
   text-decoration: none;
+  margin: 0;
+  height: 100%;
 }
 a:hover {
   background-color:rgb(205, 151, 234);
@@ -59,8 +69,7 @@ a:hover {
 h1{
   font-size: 3em;
   color:black;
-  padding: 0 0 0 30px;
-  
+  margin: 0;
 }
 .menu h1{
   text-align: left;
@@ -84,15 +93,15 @@ h2 {
 }
 
 ul img {
-  width:20em; 
+  width:20em;
   height:auto;
   margin: 1em 5em 1em 1em;
-  
+
 }
 
 ul {
   list-style: none ;
-  
+
 }
 ul li {
   color: white;
@@ -102,83 +111,62 @@ img {
   width:auto;
   height:auto;
   margin: 1em 10em 1em 10em;
-  
-}    
+
+}
 
 .fotopessoal{
   display:flex;
   align-items:center;
-  flex-direction: column; 
-} 
+  flex-direction: column;
+}
 
-.atalho { 
+.atalho {
   padding:0.5em;
   margin:1em;
 
 }
-
-
-nav ul {
-    list-style-image:none;
-    list-style-position:outside;
-    list-style-type:none;
-    overflow:hidden;
-    margin:0;
-    padding:0;
-}
-nav ul li {
-  float:left;
-  font-size:1.5em;
-  line-height:normal;
-  margin-left:-2px;
-
-  padding:0;
-}
-
 .anime, .manga, .jogos {
   font-size: 1.5em;
-  font-weight: bold; 
+  font-weight: bold;
   display:flex;
   align-items: center;
   flex-direction: column;
-}  
-  
+}
+
   </style>
-  
+
  </head>
-  
+
   <body>
     <nav class="menu">
-    <div class="menu"> 
-    <h1 id="primeirotitulo">《Minha página》 </h1>
-    
-     <ul>
+      <h1 id="primeirotitulo">《Minha página》 </h1>
+
+      <ul>
        <li><a hover class="atalho" href="#Sobre mim">Sobre mim</a></li>
-      
+
        <li><a hover class="atalho" href="#O que aprendi no Webdev">O que aprendi no Webdev</a></li>
-       
+
       </ul>
-      
-      </div>
+
     </nav>
     <h2 id="Sobre mim">《Sobre mim》 </h2>
-    
+
      <p> Olá, me chamo Francielly, sou caloura de Matemática Aplicada e tenho 18 anos. Nessa página falarei sobre algumas das coisas que gosto e sobre o WebDev.</p>
-    
-       
-      <div class="fotopessoal">   
+
+
+      <div class="fotopessoal">
       <img src="https://media-exp1.licdn.com/dms/image/C5603AQFWNuZ1WCXO_A/profile-displayphoto-shrink_400_400/0/1648764351531?e=1657152000&v=beta&t=02fqu2wkH-VuV-UdjlJf_7BFlmvL3K5Ug0s3Oq9WXUI"/>
       </div>
      <p>Assisto muitos animes, os meus preferidos são:</p>
-     
+
      <ul class="anime">
         <li>《Jojo's Bizarre Adventure》 </li>
-        <img src="https://i.pinimg.com/originals/96/33/24/9633246b71c2eaa106248a9cccb36039.gif" 
-          
+        <img src="https://i.pinimg.com/originals/96/33/24/9633246b71c2eaa106248a9cccb36039.gif"
+
              />
         <li>《Hunter x Hunter》</li>
-        <img src="https://i.pinimg.com/originals/5b/ed/22/5bed22b80c6dd09910681ba31465df31.gif" 
-          
+        <img src="https://i.pinimg.com/originals/5b/ed/22/5bed22b80c6dd09910681ba31465df31.gif"
+
              />
         <li>《Sangatsu No Lion》</li>
         <img src="https://i.pinimg.com/originals/41/78/75/41787558b369464de02f8d67db1d2586.gif"/>
@@ -195,17 +183,17 @@ nav ul li {
         <li>《Wotakoi》</li>
   <img src="https://i.pinimg.com/originals/ac/c0/33/acc033ccef64bcb88c29f82dca7a130d.gif"/>
         </ul>
-      
+
      <p><a target= "_blank"href = "https://anilist.co/user/franboesa/">Aqui</a> um link para meu Anilist</p>
-      
-     
+
+
      <p>Também gosto de jogar:</p>
       <ul class="jogos">
          <li>《Genshin Impact》</li>
-<img src="https://i.pinimg.com/originals/6a/81/92/6a8192ceab3a81ed623cdb59f14a7450.gif"/>        
+<img src="https://i.pinimg.com/originals/6a/81/92/6a8192ceab3a81ed623cdb59f14a7450.gif"/>
       </ul>
-      
-    
+
+
      <h2 id="O que aprendi no Webdev"> 《O que aprendi no Webdev》</h2>
             <div></div>
 
@@ -223,6 +211,6 @@ nav ul li {
         <li>O que é flexbox e suas propriedades</li>
         <li>Como usar float e position</li>
         </ul>
-      
+
       </body>
       </html>
