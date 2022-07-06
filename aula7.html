@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <script src="aula7.js"></script>
+        <title>Pokedex</title>
+        <style>
+            /* ta feio pra caramba mas ia dar mto trabalho fazer do jeito bonitinho q eu queria ent me perdoe por esse site horroroso, mas pelo menos funciona*/
+            .ativado{
+            background-color: rgb(188, 188, 183);
+            border-radius: 10px;
+            }
+          
+            
+            p{
+                background-color: rgb(211, 208, 208);
+                padding:  20px;
+                width: fit-content;
+                border: 10px black;
+                margin: 5px;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+        
+       
+            div{
+                width: fit-content;
+                padding: 100px;
+                position: center;
+            }
+            img{
+                width: 30em;
+               
+            }
+            .escondido{
+                display:none;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            ul{
+                display: inherit;
+                list-style-type:none;
+                
+            }
+            li {
+                font-weight: bold;
+            }
+            h1{
+                font-size: 5em;
+            }
+
+            
+        </style>
+
+    </head>
+    <body>
+        <h1>Pokedex</h1> 
+        Digite o nome do pokemon
+        <input/>  <button onclick="envia(), mudacss()">Pesquisar</button>
+        <div class="container"> <div class = "escondido" >
+            <img src= ""/>
+            <h1 id="Nome"></h1>
+            <ul>
+            <li>Tipo<p id="Tipo"></p></li>
+            <li>Peso<p id="Peso"></p></li>
+            <li>Habilidade<p id="Habilidade1"></p></li>
+            <li><p id="Habilidade2"></p></li>
+            <li>HP<p id="HP"></p></li>
+            <li>Ataque<p id="Ataque"></p></li>
+            <li>Defesa<p id="Defesa"></p></li>
+            <li>Ataque especial<p id="Ataque especial"></p></li>
+            <li>Defesa especial<p id="Defesa especial"></p></li>
+            <li>Velocidade<p id="Velocidade"></p></li>
+            <li>XP<p id="XPbase"></p></li>
+        </ul>
+
+        </div>
+    </div>
+    </body>
+</html>
